@@ -3,7 +3,6 @@
 /// <reference path="core.ts" />
 
 namespace ts {
-    const emptyArray: any[] = [];
     const ignoreDiagnosticCommentRegEx = /(^\s*$)|(^\s*\/\/\/?\s*(@ts-ignore)?)/;
 
     export function findConfigFile(searchPath: string, fileExists: (fileName: string) => boolean, configName = "tsconfig.json"): string {
